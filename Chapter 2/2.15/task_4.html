@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    'use strict'
+
+    let x = +prompt('Введите число возводимое в степень', '');
+    let n = +prompt('Введите число степени', '');
+
+    function pow(x, n) {
+      let count = x
+      for (let i = 1; i < n; i++) {
+        count *= x
+      }
+      return count
+    }
+
+
+    if (n < 1) {
+      alert(`Нельзя возвести число ${x} в ${n} степень, введите число больше 0`);
+    } else {
+      alert(pow(x, n));
+    }
+  </script>
+</body>
+
+</html>
