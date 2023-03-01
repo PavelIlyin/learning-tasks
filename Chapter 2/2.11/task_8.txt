@@ -1,0 +1,4 @@
+
+if (-1 || 0) alert( 'first' );            // 'first' (-1 вернет true)
+if (-1 && 0) alert( 'second' );           //  не выполнится (0 вернет false)
+if (null || -1 && 1) alert( 'third' );    // 'third' (правое && имеет больший приоритет и вернет true (1))

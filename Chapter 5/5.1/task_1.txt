@@ -1,0 +1,10 @@
+let str = "Привет";
+
+str.test = 5;
+
+alert(str.test);
+
+Ответ:
+
+1. При использовании 'use strict' выдаст ошибку 'TypeError'.
+2. Без 'use strict' undefined присвоится к объекту-обертке и удалится.
